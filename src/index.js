@@ -11,8 +11,8 @@ import {Provider} from 'react-redux'
 import store from './redux/store'
 //引入模块
 import Toutiao from './container/toutiao/toutiao'
-import Test from './container/test/test'
-import Login from './container/login/login'
+import Test2 from './container/test/test2'
+import Login from './container/login/login' 
 import Register from './container/register/register'
 import FloatLayer from './container/floatLayer/floatLayer'
 import Authroute from './component/authroute/authroute'
@@ -29,7 +29,7 @@ const App =()=>(
                  <Route path='/register' component={Register}/>
                  <Route path='/floatLayer' component={FloatLayer}/>
                  <Route path='/clock' component={Clock}/>
-                 <Route path='/test' component={Test}/>    
+                 <Route path='/test2' component={Test2}/>    
              </div>
          </HashRouter>
     </Provider>  

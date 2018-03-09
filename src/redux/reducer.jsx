@@ -5,4 +5,4 @@ const LoginReducer=function(state={computer:20},action){
     }
 
 }
-export {LoginReducer}
+export {LoginReducer}  
