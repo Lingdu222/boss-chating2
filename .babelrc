@@ -3,9 +3,12 @@
         [
             "import",
             {
+                "libraryName": "antd-mobile",
+                "style": true
+            },
+            {
                 "libraryName": "antd",
-                "libraryDirectory": "lib",
-                "style": true, // or 'css'
+                "style": true
             }
         ]
     ]

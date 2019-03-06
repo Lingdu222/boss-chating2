@@ -149,15 +149,15 @@ module.exports = {
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {
-              // plugins: [
-              //   [
-              //     require.resolve('babel-plugin-import'),// 导入 import 插件
-              //     {
-              //       libraryName: 'antd',   //暴露antd
-              //       style: 'css'
-              //     }
-              //   ]
-              // ],
+              plugins: [
+                [
+                  require.resolve('babel-plugin-import'),// 导入 import 插件
+                  {
+                    libraryName: 'antd',   //暴露antd
+                    style: 'css'
+                  }
+                ]
+              ],
               compact: true,
             },
           },

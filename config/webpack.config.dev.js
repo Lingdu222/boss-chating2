@@ -149,15 +149,15 @@ module.exports = {
               // It enables caching results in ./node_modules/.cache/babel-loader/
               // directory for faster rebuilds.
 
-              // plugins: [
-              //   [
-              //     require.resolve('babel-plugin-import'),// 导入 import 插件
-              //     {
-              //       libraryName: 'antd',   //暴露antd
-              //       style: 'css'
-              //     }
-              //   ]
-              // ],
+              plugins: [
+                [
+                  require.resolve('babel-plugin-import'),// 导入 import 插件
+                  {
+                    libraryName: 'antd',   //暴露antd
+                    style: 'css'
+                  }
+                ]
+              ],
               cacheDirectory: true,
             },
           },
