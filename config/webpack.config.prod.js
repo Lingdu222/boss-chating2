@@ -153,8 +153,13 @@ module.exports = {
                 [
                   require.resolve('babel-plugin-import'),// 导入 import 插件
                   {
-                    libraryName: 'antd',   //暴露antd
-                    style: 'css'
+                    "libraryName": "antd",
+                    "libraryDirectory": "es",   // default: lib
+                    "style": true
+                  },
+                  {
+                    "libraryName": "antd-mobile",
+                    "libraryDirectory": "es"
                   }
                 ]
               ],

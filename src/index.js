@@ -17,14 +17,17 @@ import Test2 from './container/test/test2'
 import Login from './container/login/login'
 import Register from './container/register/register'
 import FloatLayer from './container/floatLayer/floatLayer'
-// import Authroute from './component/authroute/authroute'
+import Authroute from './component/authroute/authroute'
 import Clock from './component/clock/index'
 
 import 'antd-mobile/dist/antd-mobile.css'
+
+import './config'
 const App = () => (
     <Provider store={store}>
         <HashRouter>
-            <Switch>
+            <div>
+                <Authroute />
                 <Route path='/toutiao' component={Toutiao} />
                 <Route path='/login' component={Login} />
                 <Route path='/register' component={Register} />
@@ -32,7 +35,7 @@ const App = () => (
                 <Route path='/clock' component={Clock} />
                 <Route path='/test2' component={Test2} />
                 <Redirect exact form='/' to='/login'></Redirect>
-            </Switch>
+            </div>
         </HashRouter>
     </Provider>
 )

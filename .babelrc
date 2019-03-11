@@ -3,13 +3,14 @@
         [
             "import",
             {
-                "libraryName": "antd-mobile",
+                "libraryName": "antd",
+                "libraryDirectory": "es", // default: lib
                 "style": true
             },
             {
-                "libraryName": "antd",
-                "style": true
-            }
+                "libraryName": "antd-mobile",
+                "libraryDirectory": "es"
+            },
         ]
     ]
 }

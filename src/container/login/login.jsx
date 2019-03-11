@@ -1,19 +1,20 @@
-import React,{Component} from 'react'
+import React, { Component } from 'react'
 //引入模块
 import Logo from '../../component/logo/logo'
-import { List, InputItem ,WingBlank,WhiteSpace,Button} from 'antd-mobile';
-class Login extends Component{
-    constructor(props){
+import { List, InputItem, WingBlank, WhiteSpace, Button } from 'antd-mobile';
+class Login extends Component {
+    constructor(props) {
         super(props)
-        this.register=this.register.bind(this)
+        this.register = this.register.bind(this)
     }
-    register(){
+    register() {
         this.props.history.push('./register')
     }
-    render(){
+    render() {
         return (
             <div>
-                <Logo/>
+
+                <Logo />
                 <WingBlank>
                     <List>
                         <InputItem>用户</InputItem>

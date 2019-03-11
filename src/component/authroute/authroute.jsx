@@ -7,6 +7,12 @@ import { withRouter } from 'react-router-dom'
 
 class Authroute extends React.Component {
     componentDidMount() {
+        let publicUrl = ['/login', '/register']
+        let name = this.props.location.pathname
+        if (publicUrl.indexOf(name) > -1) {
+            return null
+        }
+
         //获取用户信息
         axios.get('/user/info').then(res => {
             if (res.status === 200) {
@@ -21,11 +27,8 @@ class Authroute extends React.Component {
         })
     }
     render() {
-        return (
-            <div>
-                检测路由
-            </div>
-        )
+        // console.log(this.props.location)
+        return null
     }
 }
 export default withRouter(Authroute)

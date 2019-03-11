@@ -34,8 +34,12 @@
       [
         "import",
         {
-          "libraryName": "antd-mobile",
-          "style": "css"
+          "libraryName": "antd",
+          "libraryDirectory": "lib",
+          "style": true
+        },
+        {
+          "libraryName": "antd-mobile"
         }
       ],
       "transform-decorators-legacy"
